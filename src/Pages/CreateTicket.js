@@ -9,7 +9,7 @@ function CreateTicket() {
     issue: "Bug",
     priority: "Low",
     summary: "",
-    assignee: "",
+    assignee: "Person 1",
     description: "",
   });
 

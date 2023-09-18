@@ -6,8 +6,6 @@ require("dotenv").config({ path: "./config.env" });
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-// app.use(express.json());
-// app.use(express.urlencoded({extended:true}));
 
 const TicketsController = require("./controllers/tickets.controller");
 
@@ -17,35 +15,17 @@ const uri = "mongodb+srv://thiamath95:DQQo21x798p4EYCO@ticketlist.a1fivfx.mongod
 
 mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true});
 
-// const fruitSchema = new mongoose.Schema({
-
-//     name: String,
-//     rating: Number,
-//     review: String
-// });
-
-// const Fruit = mongoose.model("Fruit", fruitSchema);
-
-// const fruit= new Fruit({
-//     name:"Grape",
-//     rating:7,
-//     review:"Pretty solid as a fruit."
-// });
-
-// fruit.save();
-
-// console.log(Fruit.find());
-
 app.post('/api/createTickets',[ 
     TicketsController.create
 ]);
 app.get('/api/ticketRecord',[
     TicketsController.getAll
 ]);
-app.get('/tickets/:ticketID',[
+app.get('/api/tickets/:ticketID',[
     TicketsController.getById
+
 ]);
-app.path('tickets/:ticketID',[
+app.patch('/api/ticketsUpdate/:ticketID',[
     TicketsController.patchById
 ]);
 // app.delete('tickets/:ticketID',[

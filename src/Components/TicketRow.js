@@ -3,10 +3,8 @@ import React from "react";
 function TicketRow(props){
 
     return(
-        <div>
-            <tr>
+            <tr key={props.ticketId}>
                 <td>
-                    {props.ticketID}
                 </td>
                 <td>
                     {props.ticketPriority}
@@ -24,7 +22,6 @@ function TicketRow(props){
                     {props.tickeCreated}
                 </td>
             </tr>
-        </div>
     );
 }
 

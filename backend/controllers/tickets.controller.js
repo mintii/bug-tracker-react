@@ -40,15 +40,8 @@ exports.getAll = (req,res)=>{
 
 exports.getById =(req,res)=>{
 
-    TicketModel.findOne({_id:req.params.ticketID})
+    TicketModel.findById(req.params.ticketID)
     .then((ticket)=>{
-        if(!ticket){
-            return res.status(404).send(
-                jsend(404,{
-                    message:'Ticket not found!',
-                })
-            );
-        }
         res.status(200).send(
             jsend(200, {
                 ticket,
@@ -57,18 +50,15 @@ exports.getById =(req,res)=>{
 
     })
     .catch((err)=>{
-        reset.status(404).send(
-            jsend(404, {
-                message: "Ticket not found!",
-            })
-        );
+
+        console.log(err.mesage);
     });
 
 };
 
 exports.patchById =(req,res)=>{
     
-    TicketModel.findOneAndUpdate({_id: req.params.ticketId}, req.body)
+    TicketModel.findOneAndUpdate(req.params.ticketId, req.body)
     .then((ticket)=>{
         if(!ticket){
             return res.status(404).send(
@@ -84,11 +74,7 @@ exports.patchById =(req,res)=>{
         )
     })
     .catch((err)=>{
-        res.status(404).send(
-            jsend(404, {
-                message:"Ticket not found!",
-            })
-        )
+        console.log(err.message);
     })
 }
 exports.delete=(req,res)=>{

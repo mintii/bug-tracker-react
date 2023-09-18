@@ -29,9 +29,9 @@
     margin-top: 70px;
     min-width: 600px;
     width: 700px;
-    display: flex;
-    flex:2;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex:2; */
+    /* justify-content: space-around; */
     background-color: white;
     border-radius:5px;
     box-shadow: 5px 5px 5px rgba(255, 150, 66, .4)  ;
@@ -44,6 +44,12 @@
     margin-bottom:15px;  
  
     
+}
+
+.ticket-body:hover{
+
+    cursor: pointer;
+
 }
 
 /* tr:nth-child(even) {
@@ -85,4 +91,9 @@ thead{
 
     padding:10px;
     height: 30%;
+}
+.icon{
+
+    padding: 10px;
+
 }

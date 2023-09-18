@@ -1,18 +1,8 @@
-import React , { useState }from "react";
-import { Link, NavLink } from "react-router-dom";
-import $ from 'jquery';
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css" ; 
 export default function Navbar() {
 
-  const [active, setActive] = useState("");
-
-
-//   $(".option").on("click",function(){
-
-//   $(".active").removeClass("active");
-//   $(this).addClass("active");
-
-// });
   return (
     < >
       <nav className="sidebar">
