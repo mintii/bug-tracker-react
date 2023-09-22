@@ -139,7 +139,7 @@ Get ticket and display the ticket card when the user clicks on a row
 
                 <>
                   <button className= "progress">In Progress</button>
-                  <button className= "progress"           >Closed</button>
+                  <button className= "progress">Closed</button>
                 </>
               </>
             )}
