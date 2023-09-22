@@ -23,7 +23,7 @@ Node.js with Express forms the backbone of the server-side operations. The modul
 MongoDB, a NoSQL database, stores the ticket data. It's currently hosted on MongoDB's free tier, which might exhibit occasional inactivity. Plans are underway to transition to a more permanent solution.
 
 ## Challenges and Learning:
-###State Management: Transitioning from static sites required a shift in paradigm. React's dynamic nature required understanding and managing states effectively, ensuring seamless user experience.
+### State Management: Transitioning from static sites required a shift in paradigm. React's dynamic nature required understanding and managing states effectively, ensuring seamless user experience.
 ### Routing: Ensuring that routing is done appropriately was crucial. Proper routing helps in delivering the right content to users and avoids blank or erroneous displays.
 ### Backend Integration: Integrating the frontend with a Node.js backend involved learning about CORS, API request-response patterns, and ensuring data integrity.
 Future Enhancements:
@@ -32,7 +32,7 @@ Future Enhancements:
 ### Database: Exploring cost-effective, persistent database hosting solutions for uninterrupted access.
 ### Setup and Installation:
 Clone the repository to your local machine.
-Remove the package-lock.json and package.json files.
+Remove the package-lock.json file and node modules folder.
 Run npm run i to fetch all the required dependencies.
 Execute npm run start to spin up the project.
 ## Conclusion:
