@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "homepage": "https://bug-tracker-server.vercel.app",
   "description": "Modules for the backend",
   "main": "backend.js",
   "scripts": {
