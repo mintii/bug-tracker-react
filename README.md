@@ -23,13 +23,19 @@ Node.js with Express forms the backbone of the server-side operations. The modul
 MongoDB, a NoSQL database, stores the ticket data. It's currently hosted on MongoDB's free tier, which might exhibit occasional inactivity. Plans are underway to transition to a more permanent solution.
 
 ## Challenges and Learning:
-### State Management: Transitioning from static sites required a shift in paradigm. React's dynamic nature required understanding and managing states effectively, ensuring seamless user experience.
-### Routing: Ensuring that routing is done appropriately was crucial. Proper routing helps in delivering the right content to users and avoids blank or erroneous displays.
-### Backend Integration: Integrating the frontend with a Node.js backend involved learning about CORS, API request-response patterns, and ensuring data integrity.
+### State Management: 
+Transitioning from static sites required a shift in paradigm. React's dynamic nature required understanding and managing states effectively, ensuring seamless user experience.
+### Routing: 
+Ensuring that routing is done appropriately was crucial. Proper routing helps in delivering the right content to users and avoids blank or erroneous displays.
+### Backend Integration: 
+Integrating the frontend with a Node.js backend involved learning about CORS, API request-response patterns, and ensuring data integrity.
 Future Enhancements:
-### User System: Introducing authentication to ensure secure access and role-based functionalities.
-### Analytics: Using libraries like Chart.js or D3.js to build a comprehensive analytics dashboard for trend tracking.
-### Database: Exploring cost-effective, persistent database hosting solutions for uninterrupted access.
+### User System: 
+Introducing authentication to ensure secure access and role-based functionalities.
+### Analytics: 
+Using libraries like Chart.js or D3.js to build a comprehensive analytics dashboard for trend tracking.
+### Database: 
+Exploring cost-effective, persistent database hosting solutions for uninterrupted access.
 ### Setup and Installation:
 Clone the repository to your local machine.
 Remove the package-lock.json file and node modules folder.
