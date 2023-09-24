@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "homepage": "https://bug-tracker-server.vercel.app",
   "description": "Modules for the backend",
-  "main": "backend.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
