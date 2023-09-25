@@ -13,7 +13,7 @@ const mongoose =require('mongoose');
 
 const uri = "mongodb+srv://thiamath95:DQQo21x798p4EYCO@ticketlist.a1fivfx.mongodb.net/Tickets?retryWrites=true&w=majority";
 
-mongoose.connect(process.env.ATLAS_URI,{ useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true});
 
 app.post('/api/createTickets',[ 
     TicketsController.create

@@ -1,7 +1,7 @@
 {
   "name": "tracker",
   "version": "0.1.0",
-  "homepage": "https://bug-tracker-react.onrender.com/",
+  "homepage": "https://bug-tracker-react-qkkfjn2xj-thiamath95-gmailcom.vercel.app/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
