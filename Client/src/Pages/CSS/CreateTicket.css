@@ -1,0 +1,82 @@
+.home-wrapper{
+
+    margin-left:240px;
+    overflow-y: hidden;
+    background-color: #fff4eb;
+    height: 100%;
+
+}
+.home-wrapper .header{
+  width: 95%; 
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(255, 150, 66, .4)  ;
+  padding:10px;
+}
+.create-ticket-wrapper{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.ticket-form{
+    padding: 20px 0px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    padding:0px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(255, 150, 66, .4)  ;
+
+  }
+  .input-group{
+    padding-bottom: 2.5%;
+    display: flex;
+    flex-direction:row;
+    padding-top:20px;
+  }
+  .input-group label{
+
+    align-content: center;
+    width:150px;
+    font-size: 1.1rem;
+  }
+  .input-group > *{
+    width : 30%;
+    height: 2rem;
+    margin-left:10px;
+  }
+  input[type="text"],input[type="date"], textarea, select {
+  
+    background-color : transparent;
+    border-style: none;
+    outline: 2px solid #FFE05D;
+    border-radius : 5px;
+  
+  }
+
+  .input-group textarea{
+
+    width : 50%;
+    height: 200px;
+  } 
+  
+  .footer{
+  margin-top:5px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  }
+  
+  .footer button{
+    height:2.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid #FF9642;
+    color: #FF9642;
+    padding: 5px 10px;
+    background-color:white;
+  }
+  
+  .footer .form_submit:hover{
+    color: white;
+    background-color:#FF9642;
+  }
