@@ -23,7 +23,6 @@
     "yarn": "^1.22.19"
   },
   "scripts": {
-    "server": "node Server/index.js",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
