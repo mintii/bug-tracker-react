@@ -1,16 +1,15 @@
 const jsend = require("jsend");
-const { reset } = require("nodemon");
 const TicketModel = require("../model/ticketModel");
 
 exports.create = (req,res)=>{
 
     const newTicket = new TicketModel({
-        
+
         issue: req.body.issue,
         priority: req.body.priority,
         summary: req.body.summary,
         assignee: req.body.assignee,
-        description:  req.body.description    
+        description:  req.body.description
     });
 
     newTicket.save();
@@ -57,7 +56,7 @@ exports.getById =(req,res)=>{
 };
 
 exports.patchById =(req,res)=>{
-    
+
     TicketModel.findOneAndUpdate(req.params.ticketId, req.body)
     .then((ticket)=>{
         if(!ticket){
