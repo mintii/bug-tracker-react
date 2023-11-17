@@ -22,7 +22,7 @@ const mongoose =require('mongoose');
 
 mongoose.connect(process.env.ATLAS_URI,{ useNewUrlParser: true, useUnifiedTopology: true});
 
-app.post('/api/createTickets',[ 
+app.post('/api/createTickets',[
     TicketsController.create
 ]);
 app.get('/api/ticketRecord',[
@@ -38,7 +38,7 @@ app.patch('/api/ticketsUpdate/:ticketID',[
 // app.delete('tickets/:ticketID',[
 //     TicketsController.removeById
 // ]);
-app.listen(process.env.PORT, function(err){
+app.listen(process.env.PORT || 3000, function(err){
     if (err) console.log("Error in server setup")
     console.log("Server listening on Port", process.env.PORT);
 });
